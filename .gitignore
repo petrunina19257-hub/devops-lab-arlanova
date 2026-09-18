@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Локальные секреты и настройки окружения
+.env
+.env.*
+!.env.example
+
+# Временные файлы и журналы
+*.log
+*.tmp
+*.swp
+*.swo
+*~
