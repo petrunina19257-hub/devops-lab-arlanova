@@ -8,7 +8,7 @@
 > Author: Арланова Алина Андреевна
 > Lab: Lab2 — CI/CD для Docker приложения
 > Date of create: 18.09.2026
-> Date of finished: —
+> Date of finished: 18.09.2026
 
 ## Цель работы
 
