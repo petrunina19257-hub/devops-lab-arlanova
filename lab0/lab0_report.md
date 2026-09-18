@@ -419,13 +419,3 @@ Request с описанием, слияние и удаление отработ
 
 Полученные навыки — основа для следующих работ: контейнеризации, настройки
 CI/CD и автоматизации развёртывания.
-
----
-
-## Источники
-
-1. [Pro Git Book](https://git-scm.com/book/ru/v2) — официальная книга по Git.
-2. [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) — документация GitHub.
-3. [About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) — документация GitHub.
-4. [gitignore.io](https://www.toptal.com/developers/gitignore) — генератор шаблонов `.gitignore`.
-5. [Правила оформления отчёта](https://ex-itmo-ict-faculty.github.io/introduction-in-web-tech/education/labs2025-2026/reportdesign/) — требования кафедры.
