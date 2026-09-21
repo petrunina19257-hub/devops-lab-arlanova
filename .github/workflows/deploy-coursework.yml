@@ -1,0 +1,22 @@
+# Публикация сайта курсовой работы (MkDocs) на GitHub Pages при изменениях в main
+name: deploy-coursework-site
+on:
+  push:
+    branches: [main]
+    paths: ["coursework/**", ".github/workflows/deploy-coursework.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: coursework
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: pip install -r requirements.txt
+      - run: mkdocs gh-deploy --force
