@@ -1,0 +1,91 @@
+# ── Основные параметры сайта ──────────────────────────────
+site_name: Алина Арланова
+site_description: Персональный сайт Алины Арлановой — магистрантки ИТМО и основательницы проекта NADENKAFLOWERS
+site_author: Алина Арланова
+site_url: https://petrunina19257-hub.github.io/devops-lab-arlanova/
+copyright: Copyright &copy; 2026 Алина Арланова · Курсовая работа по дисциплине «Введение в веб-технологии», ИТМО
+
+# ── Тема Material ─────────────────────────────────────────
+theme:
+  name: material
+  language: ru
+  logo: images/logo.svg
+  favicon: images/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs        # разделы вкладками в шапке
+    - navigation.sections    # группировка разделов в боковом меню
+    - navigation.top         # кнопка «Наверх»
+    - navigation.footer      # ссылки «Назад / Далее» внизу страницы
+    - search.highlight       # подсветка найденного текста
+    - search.share           # ссылка на результат поиска
+    - search.suggest         # подсказки при вводе
+    - content.code.copy      # кнопка копирования кода
+  palette:
+    # Светлая тема
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Включить тёмную тему
+    # Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Включить светлую тему
+
+# ── Навигация ─────────────────────────────────────────────
+nav:
+  - Главная: index.md
+  - О себе:
+      - Обо мне: about.md
+      - Резюме: resume.md
+      - Достижения: achievements.md
+  - Проекты: projects.md
+  - Заметки: blog/index.md
+  - Контакты: contacts.md
+
+# ── Плагины ───────────────────────────────────────────────
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+
+# ── Расширения Markdown ───────────────────────────────────
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition                 # блоки !!! note / tip / warning
+  - pymdownx.details           # сворачиваемые блоки ???
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list                  # атрибуты { .class } — нужны для кнопок и карточек
+  - md_in_html                 # Markdown внутри HTML — нужен для карточек
+  - pymdownx.emoji:            # иконки :material-...: и :fontawesome-...:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# ── Дополнительно: футер и стили ──────────────────────────
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/petrunina19257-hub
+      name: GitHub
+    - icon: fontawesome/solid/graduation-cap
+      link: https://itmo.ru
+      name: Университет ИТМО
+
+extra_css:
+  - stylesheets/extra.css
