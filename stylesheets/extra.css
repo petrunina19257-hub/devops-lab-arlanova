@@ -1,0 +1,11 @@
+/* Круглое фото */
+.avatar {
+  border-radius: 50%;
+  margin: 0 1rem 1rem 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Немного воздуха в карточках проектов */
+.md-typeset .grid.cards > ul > li {
+  padding: 1rem 1.2rem;
+}
